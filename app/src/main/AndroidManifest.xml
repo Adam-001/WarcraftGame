@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.warcraft_game">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/hero0"
+        android:supportsRtl="true"
+        android:theme="@style/index_style"
+        >
+
+        <activity android:name="com.warcraft_game.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.warcraft_game.activity.Game">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.warcraft_game.activity.HistoryRecordActitvty">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
