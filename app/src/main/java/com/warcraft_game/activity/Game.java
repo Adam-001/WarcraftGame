@@ -238,6 +238,7 @@ public class Game extends Activity implements Runnable{
     @Override
     public void onBackPressed() {
         gameStatus = GameStatus.STOP;
+        record();
         super.onBackPressed();
     }
 
